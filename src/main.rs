@@ -4,8 +4,9 @@ use std::fs;
 use std::process::exit;
 
 fn main() {
-    let paths = fs::read_dir("./data").unwrap();
-    fs::create_dir_all("./data").expect("创建data文件失败");
+    let data_folder_path = "./data";
+    let paths = fs::read_dir(data_folder_path).expect("data文件夹不存在");
+    // fs::create_dir_all(data_folder_path).expect("创建data文件失败");
 
     let mut rng = rand::thread_rng();
 
