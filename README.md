@@ -5,3 +5,8 @@
 # 运行
 
 cargo run
+
+
+# build
+
+./build.sh
